@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "magnet heading";
+    src: url(../fonts/katahdin-round.regular.otf) format("truetype");
+}
+
+body {
+  background: url(../images/refrigerator.jpg) fixed;
+  background-size: cover;
+  overflow: scroll;
+  font-family: sans-serif;
+  position: relative;
+  z-index: -3;
+}
+
+body.reading {
+  background: #fff;
+}
+
+nav {
+  position: fixed;
+  right:0px;
+  top:100px;
+}
+
+.navigation {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #08f;
+}
+
+nav .navigation.main li, nav .nav-item {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+  padding: 44px 0 0 20px;
+  margin: 10px 0;
+  box-shadow: 1px 1px 6px 0px #666;
+  border-right: 0;
+  font-family: "magnet heading";
+
+}
+
+nav .nav-item {
+  position: relative;
+  right:100px;
+  cursor: pointer;
+  margin: 0;
+  color: #08d;
+}
+
+.poem-list li {
+  color: #08f;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.poem-list {
+  font-family: "magnet heading";
+  background: #fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 400px;
+  padding-left: 20px;
+  border-left: 1px solid #bbb;
+}
+
+.poem-list h3 {
+  font-size: 1.5em;
+}
+
+.poem-list ul {
+  padding: 0;
+}
+
+.slideout {
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  right: -350px;
+  transition: all 0.3s;
+  z-index: 50;
+}
+
+.slideout.active {
+  right: 0;
+}
+
+.magnet-heading {
+  font-family: "magnet heading", "arial black", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.1em;
+  text-shadow: 3px 3px 3px #000;
+  letter-spacing: 0.2em;
+  position: relative;
+  z-index: 2;
+  cursor: move;
+}
+
+.magnet-word {
+  margin-right: 0.7em;
+}
+
+.container {
+  font-size: 1.2em;
+  margin: 100px auto;
+  text-align: left;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  z-index: -2;
+}
+
+.container.tiles {
+  font-size: 1.7em;
+}
+
+.tile {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 7px 1px;
+  box-shadow: 1px 1px 3px #000;
+  background: #fff;
+  cursor: move;
+}
+
+.tile:nth-child(3n + 0) {
+  margin: 7px 7px;
+  top: 1px;
+}
+
+.tile:nth-child(5n + 2) {
+  margin: 7px 3px;
+  top: -1px;
+}
+
+.poems {
+  display: none;
+}
+
+.button-field {
+  margin: 40px 0;
+}
+
+.btn {
+  background: #222;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #349;
+}
+
+@media (max-width:1200px) {
+  .container {
+    width: 94%;
+    margin: 100px 3%;
+  }
+}
